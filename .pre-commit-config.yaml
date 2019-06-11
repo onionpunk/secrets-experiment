@@ -1,0 +1,7 @@
+- repo: local
+#   rev: 0397b5fd47a4d76d929159988d00ee740903b37b
+  hooks:
+  - id: detect-secrets
+    name: detect-secrets
+    entry: /Users/alexanderarif/Library/Python/2.7/bin/detect-secrets scan
+    language: script
