@@ -4,5 +4,5 @@ secret=MySecret123@! # pragma: allowlist secret
 
 myvariable="czZCaGRSa3F0MzpnWDFmQmF0M2JWX"
 
-AWS_KEY="AKIAY5XAIXXR7ALTOOHC"
-myvariable_access="3L091LfFvV/dcoDCy5YO7sWz56bitLQjlVVY2ZxmY"
+AWS_KEY="AKIAY5XAIXXR7ALTOOHH"
+myvariable_access="3L091LfFvV/dcoDCy5YO7sWz56bitLQjlVVY2WxmY"
