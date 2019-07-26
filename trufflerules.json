@@ -1,0 +1,3 @@
+{
+    "detect secrets bypass": "pragma: allowlist secret"
+}
