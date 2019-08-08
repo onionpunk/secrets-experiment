@@ -15,9 +15,9 @@ phases:
   build:
     commands:
       - ls
-      # - jfrog rt c --url $ARTIFACTORY_URL --apikey $JFROG_API_KEY
-      # - jfrog rt ping
+      - jfrog rt c --url $ARTIFACTORY_URL --apikey $JFROG_API_KEY
+      - jfrog rt ping
       - version=$(cat package.json | jq '.version' --raw-output)
       - project_name=$(cat package.json | jq '.name' --raw-output)
-      - jfrog rt npmi mynpm-registry --build-name=$project_name --build-number=$version --url $ARTIFACTORY_URL --apikey $JFROG_API_KEY
+      - jfrog rt npmi mynpm-registry --build-name=$project_name --build-number=$version
       - jfrog rt bp $project_name $version
