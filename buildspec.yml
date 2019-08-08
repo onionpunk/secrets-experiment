@@ -9,8 +9,7 @@ env:
 phases:
   pre_build:
     commands:
-      - apt update
-      - apt install jq
+      - yum install jq -y
   build:
     commands:
       - ls
