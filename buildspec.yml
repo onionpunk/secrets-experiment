@@ -9,7 +9,7 @@ env:
 phases:
   pre_build:
     commands:
-      - yum install jq -y
+      - apk add jq
   build:
     commands:
       - ls
