@@ -9,7 +9,7 @@ env:
 phases:
   pre_build:
     commands:
-      - apk add --update nodejs npm
+      - apk add npm
       - apk add jq
   build:
     commands:
