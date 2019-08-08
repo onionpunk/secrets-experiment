@@ -1,0 +1,43 @@
+version: 0.2
+
+env:
+  variables:
+     ARTIFACTORY_URL: "https://alexatwoodside.jfrog.io/alexatwoodside"
+  parameter-store:
+     JFROG_API_KEY: "alex-jfrog-trial-apikey"
+     # key: "value"
+  #git-credential-helper: yes
+
+phases:
+  #install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    #runtime-versions:
+      # name: version
+      # name: version
+    #commands:
+      # - command
+      # - command
+  #pre_build:
+    #commands:
+      # - command
+      # - command
+  build:
+    commands:
+      - ls
+      - jfrog rt c --url $ARTIFACTORY_URL --apikey $JFROG_API_KEY
+      - jfrog rt ping
+  #post_build:
+    #commands:
+      # - command
+      # - command
+#artifacts:
+  #files:
+    # - location
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
