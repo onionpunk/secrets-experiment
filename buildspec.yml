@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-     ARTIFACTORY_URL: "https://alexatwoodside.jfrog.io/alexatwoodside"
+     ARTIFACTORY_URL: "https://alexatwoodside.jfrog.io/alexatwoodside/"
   parameter-store:
      JFROG_API_KEY: "alex-jfrog-trial-apikey" #pragma: allowlist secret
 
