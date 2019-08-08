@@ -7,6 +7,10 @@ env:
      JFROG_API_KEY: "alex-jfrog-trial-apikey" #pragma: allowlist secret
 
 phases:
+  pre_build:
+    commands:
+      - apt update
+      - apt install jq
   build:
     commands:
       - ls
