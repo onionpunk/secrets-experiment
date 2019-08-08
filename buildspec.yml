@@ -16,4 +16,6 @@ phases:
       - jfrog rt c --url $ARTIFACTORY_URL --apikey $JFROG_API_KEY
       - jfrog rt ping
       - version=$(cat package.json | jq '.version' --raw-output)
-      - echo $version
+      - project_name=$(cat package.json | jq '.name' --raw-output)
+      - jfrog rt npmi mynpm-registry --build-name=$project_name --build-number=$version
+      - jfrog rt bp $project_name $version
