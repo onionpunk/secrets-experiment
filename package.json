@@ -1,5 +1,5 @@
 {
-  "name": "secrets-experiment",
+  "name": "secrets-experiment-demo",
   "version": "1.0.0",
   "description": "testing jfrog xray",
   "main": "index.js",
